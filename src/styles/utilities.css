@@ -1,0 +1,55 @@
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.neon-button {
+  background: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.neon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+}
+
+.neon-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--foreground);
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.neon-outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.card-glow {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.card-glow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+}

@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("/hero-bg.jpg") center/cover no-repeat; */
+  /* color: white; */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.hero-title span {
+  background: linear-gradient(90deg,#4d4dff,#70edeb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.hero-sub {
+  margin-top: 5px;
+  opacity: 0.6;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  background: #4db5ff;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  padding: 12px 28px;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 20px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.8;
+}
+
+.scroll-indicator span {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 42px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+/* mouse wheel */
+.scroll-indicator span::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: white;
+  border-radius: 2px;
+  animation: scrollWheel 1.8s infinite;
+}
+
+/* scroll text */
+.scroll-indicator p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+/* animation */
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    transform: translate(-50%,0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate(-50%,10px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%,18px);
+  }
+}

@@ -1,0 +1,43 @@
+.about {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.about-header span {
+  color: var(--primary);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.about-header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.about-header p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--muted);
+}
+
+.about-stats {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.about-stats .card-glow {
+  padding: 30px;
+}
+
+.about-stats h3 {
+  font-size: 28px;
+  color: var(--primary);
+  margin: 10px 0;
+}
+
+.about-stats span {
+  color: var(--muted);
+  font-size: 14px;
+}

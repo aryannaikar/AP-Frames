@@ -1,0 +1,10 @@
+:root {
+  --background: hsl(222, 47%, 5%);
+  --foreground: hsl(210, 40%, 96%);
+  --primary: hsl(217, 91%, 60%);
+  --accent: hsl(263, 70%, 50%);
+  --card: hsl(222, 47%, 8%);
+  --muted: hsl(215, 20%, 55%);
+  --border: hsl(222, 30%, 18%);
+  --surface: hsl(222, 40%, 10%);
+}

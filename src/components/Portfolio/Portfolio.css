@@ -1,0 +1,84 @@
+.portfolio {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.portfolio-header span {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.portfolio-header h2 {
+  font-size: 40px;
+  margin: 10px 0 30px;
+}
+
+.filters {
+  margin-bottom: 30px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.main-filters button {
+  font-size: 1.1rem;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 500;
+}
+
+.sub-filters button {
+  margin: 0 5px;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.filters button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-card {
+  padding: 20px;
+}
+
+.thumb {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card::before {
+  content: "▶";
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.portfolio-card:hover::before {
+  opacity: 1;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+}

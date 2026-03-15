@@ -1,0 +1,29 @@
+.results {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.results-header span {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.results-header h2 {
+  font-size: 40px;
+  margin: 10px 0 50px;
+}
+
+.results-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.results-stats h3 {
+  font-size: 36px;
+  color: var(--primary);
+}
+
+.results-stats span {
+  color: var(--muted);
+}
