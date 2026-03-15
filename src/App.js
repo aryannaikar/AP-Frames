@@ -10,7 +10,6 @@ import Testimonials from "./components/Testimonials/Testimonials";
 
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp/FloatingWhatsApp";
 import Preloader from "./components/Preloader/Preloader";
 
 function App() {
@@ -161,7 +160,6 @@ function App() {
       </main>
 
       <Footer />
-      <FloatingWhatsApp />
     </>
   );
 }
