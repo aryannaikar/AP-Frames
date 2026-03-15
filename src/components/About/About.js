@@ -33,7 +33,7 @@ function About() {
   const [startCount, setStartCount] = useState(false);
 
   const stats = [
-    { icon: <Users size={28} />, number: 50, label: "Accounts Managed" },
+    { icon: <Users size={28} />, number: 10, label: "Accounts Managed" },
     { icon: <Eye size={28} />, number: 5, label: "Million+ Views" },
     { icon: <Film size={28} />, number: 100, label: "Reels Posted" },
     { icon: <TrendingUp size={28} />, number: 30, label: "Clients Served" }
