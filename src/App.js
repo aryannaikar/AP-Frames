@@ -53,8 +53,8 @@ function App() {
     document.body.appendChild(glow);
 
     const move = (e) => {
-      glow.style.left = e.clientX + "px";
-      glow.style.top = e.clientY + "px";
+      // Using translate3d for hardware acceleration and centering it
+      glow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
     };
 
     window.addEventListener("mousemove", move);
@@ -85,21 +85,23 @@ function App() {
     resize();
     window.addEventListener("resize", resize);
 
-    const particles = Array.from({ length: 60 }, () => ({
+    // Optimized particle count for performance
+    const particles = Array.from({ length: 40 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      r: Math.random() * 2 + 1,
-      dx: (Math.random() - 0.5) * 0.7,
-      dy: (Math.random() - 0.5) * 0.7
+      r: Math.random() * 1.5 + 0.5,
+      dx: (Math.random() - 0.5) * 0.5,
+      dy: (Math.random() - 0.5) * 0.5
     }));
 
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+      ctx.fillStyle = "rgba(59, 130, 246, 0.4)";
       particles.forEach((p) => {
         ctx.beginPath();
+        // Drawing smaller particles for less workload
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(59,130,246,0.5)";
         ctx.fill();
 
         p.x += p.dx;
