@@ -1,6 +1,6 @@
-import React from "react";
+
 import "./Footer.css";
-import { FaInstagram, FaWhatsapp, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
