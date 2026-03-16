@@ -4,12 +4,13 @@ import { BarChart3, Film, Lightbulb, Target, Zap, Users, Camera } from "lucide-r
 
 const services = [
   { icon: <Film size={32} />, title: "Reels", desc: "High-quality reels designed to capture attention and boost engagement." },
-  { icon: <Zap size={32} />, title: "Social Media Content Creation", desc: "Creative and trend-driven content tailored for Instagram and other platforms." },
+  { icon: <Zap size={32} />, title: "Banner Designing", desc: "Creative and trend-driven content tailored for Instagram and other platforms." },
   { icon: <Target size={32} />, title: "Brand & Product Shoots", desc: "Professional visuals that showcase your brand in the best way possible." },
-  { icon: <BarChart3 size={32} />, title: "Cinematics Advertisement", desc: "Creative promotional videos to help businesses reach their audience." },
-  { icon: <Lightbulb size={32} />, title: "Video Editing", desc: "Professional editing, color grading, and cinematic storytelling." },
+  { icon: <BarChart3 size={32} />, title: "Cinematics", desc: "Creative promotional videos to help businesses reach their audience." },
+  { icon: <Lightbulb size={32} />, title: "Traditional and Potraits", desc: "All types of Traditional and Potraits" },
   { icon: <Users size={32} />, title: "Account Managing", desc: "End-to-end management of your social media profile." },
-  { icon: <Camera size={32} />, title: "Drone Shots Video", desc: "Breathtaking aerial cinematography and drone footage." }
+  { icon: <Camera size={32} />, title: "Drone Shots Video", desc: "Breathtaking aerial cinematography and drone footage." },
+  { icon: <Users size={32} />, title: "Gym Videos", desc: "All types of Gym Videos" },
 ];
 
 function Services() {

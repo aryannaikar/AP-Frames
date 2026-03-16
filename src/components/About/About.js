@@ -36,7 +36,7 @@ function About() {
     { icon: <Users size={28} />, number: 10, label: "Accounts Managed" },
     { icon: <Eye size={28} />, number: 5, label: "Million+ Views" },
     { icon: <Film size={28} />, number: 100, label: "Reels Posted" },
-    { icon: <TrendingUp size={28} />, number: 30, label: "Clients Served" }
+    { icon: <TrendingUp size={28} />, number: 50, label: "Clients Served" }
   ];
 
   useEffect(() => {
@@ -66,11 +66,11 @@ function About() {
 
           <h2>
             Creative Storytelling with
-            <span className="gradient-text"> AP Frames</span>
+            <span className="gradient-text"> AP Studios</span>
           </h2>
 
           <p>
-            AP Frames is a passionate creative team focused on producing cinematic
+            AP Studios is a passionate creative team focused on producing cinematic
             social media content that captures attention and tells powerful stories.
           </p>
 
@@ -80,7 +80,7 @@ function About() {
           </p>
 
           <p>
-            Founded by Atharva and Prajwal, AP Frames combines creativity,
+            Founded by Atharva and Prajwal, AP Studios combines creativity,
             cinematic vision, and social media expertise to deliver content that performs.
           </p>
 

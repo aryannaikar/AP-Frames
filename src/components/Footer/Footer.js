@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="section-container footer-grid">
         <div>
-          <h3 className="gradient-text">AP Frames</h3>
+          <h3 className="gradient-text">AP Studios</h3>
           <p>Cinematic social media content that captures attention and tells powerful stories.</p>
         </div>
         <div>
@@ -39,7 +39,7 @@ function Footer() {
       </div>
 
       <div className="copyright">
-        © 2026 AP Frames. All rights reserved.
+        © 2026 AP Studios. All rights reserved.
       </div>
     </footer>
   );

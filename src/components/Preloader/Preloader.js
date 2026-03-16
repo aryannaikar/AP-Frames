@@ -5,7 +5,7 @@ function Preloader() {
   return (
     <div className="preloader">
       <div className="loader-text gradient-text">
-        AP Frames
+        AP Studios
       </div>
     </div>
   );

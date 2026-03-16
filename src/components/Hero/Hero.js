@@ -12,7 +12,7 @@ function Hero() {
       <div className="hero-content">
 
         <h1 className="hero-title">
-          AP <span>Frames</span>
+          AP <span>Studios</span>
         </h1>
 
         <p className="hero-tagline">
@@ -20,11 +20,11 @@ function Hero() {
         </p>
 
         <p className="hero-sub">
-          AP Frames is a creative social media production team specializing in cinematic reels, brand storytelling, and high-quality visual content. Founded by Atharva and Prajwal.
+          AP Studios is a creative social media production team specializing in cinematic reels, brand storytelling, and high-quality visual content. Founded by Atharva and Prajwal.
         </p>
 
         <div className="hero-buttons">
-          <a href="#work" className="btn-primary">View Work</a>
+          <a href="#portfolio" className="btn-primary">View Work</a>
           <a href="#contact" className="btn-secondary">Contact Us</a>
         </div>
 

@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-        <div className="logo gradient-text">AP Frames</div>
+        <div className="logo gradient-text">AP Studios</div>
 
         <div className={`nav-links ${open ? "active" : ""}`}>
           {["home","about","services","portfolio","contact"].map((item) => (

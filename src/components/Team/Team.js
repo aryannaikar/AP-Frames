@@ -1,16 +1,18 @@
 import React from "react";
 import "./Team.css";
+import prajwalImg from "./2prajwal.jpeg";
+import atharvaImg from "./2Atharva.jpeg";
 
 const team = [
   {
     name: "Prajwal Patil",
     description: "Founder and Creative Lead with expertise in professional photo shoots and advanced editing. Successfully worked with many clients, delivering standout visuals and consistently receiving great reviews for quality and creativity",
-    image: "https://ui-avatars.com/api/?name=Prajwal+Patil&background=0D8ABC&color=fff&size=500"
+    image: prajwalImg
   },
   {
-    name: "Atharva",
+    name: "Atharva Pawar",
     description: "Founder and Creative Lead with expertise in professional photo shoots and advanced editing. Successfully worked with many clients, delivering standout visuals and consistently receiving great reviews for quality and creativity",
-    image: "https://ui-avatars.com/api/?name=Atharva&background=FF5722&color=fff&size=500"
+    image: atharvaImg
   }
 ];
 

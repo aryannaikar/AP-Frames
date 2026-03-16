@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
 
-const categories = {
-  "Video Editing": ["Reels", "Cinematic", "Commercials"],
-  "Photo Shoot": ["Wedding", "Product", "Street"],
-  "Graphic Design": ["Brand Identity", "Social Media", "Posters"]
-};
+const categories = ["Video Editing", "Photo Shoot", "Graphic Design"];
 
 const items = [
   { name: "Cinematic Wedding Highlight", category: "Video Editing", subCategory: "Cinematic" },
@@ -21,20 +17,9 @@ const items = [
 ];
 
 function Portfolio() {
-  const mainCategories = Object.keys(categories);
-  const [activeCategory, setActiveCategory] = useState(mainCategories[0]);
-  const [activeSubCategory, setActiveSubCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  const filtered = items.filter(item => {
-    const matchesCategory = item.category === activeCategory;
-    const matchesSubCategory = activeSubCategory === "All" || item.subCategory === activeSubCategory;
-    return matchesCategory && matchesSubCategory;
-  });
-
-  const handleMainCategoryChange = (cat) => {
-    setActiveCategory(cat);
-    setActiveSubCategory("All");
-  };
+  const filtered = items.filter(item => item.category === activeCategory);
 
   return (
     <section id="portfolio" className="portfolio section-container">
@@ -47,27 +32,14 @@ function Portfolio() {
         </p>
       </div>
 
-      <div className="filters main-filters">
-        {mainCategories.map(cat => (
+      <div className="filters main-filters" style={{ marginBottom: "3rem" }}>
+        {categories.map(cat => (
           <button
             key={cat}
             className={activeCategory === cat ? "active" : ""}
-            onClick={() => handleMainCategoryChange(cat)}
+            onClick={() => setActiveCategory(cat)}
           >
             {cat}
-          </button>
-        ))}
-      </div>
-
-      <div className="filters sub-filters" style={{ marginBottom: "3rem", gap: "10px" }}>
-        {["All", ...categories[activeCategory]].map(sub => (
-          <button
-            key={sub}
-            style={{ fontSize: "0.85rem", padding: "6px 15px", opacity: activeSubCategory === sub ? 1 : 0.6 }}
-            className={activeSubCategory === sub ? "active" : ""}
-            onClick={() => setActiveSubCategory(sub)}
-          >
-            {sub}
           </button>
         ))}
       </div>
@@ -77,7 +49,7 @@ function Portfolio() {
           <div key={index} className="card-glow portfolio-card">
             <div className="thumb gradient-text">{item.name.charAt(0)}</div>
             <h3>{item.name}</h3>
-            <span>{item.subCategory}</span>
+            <span>{item.category}</span>
           </div>
         ))}
       </div>
