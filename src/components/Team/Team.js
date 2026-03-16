@@ -22,7 +22,7 @@ function Team() {
       <div className="section-container">
         <div className="team-header">
           <span>THE PEOPLE BEHIND THE GROWTH</span>
-          <h2>Meet The <span className="gradient-text">Team</span></h2>
+          <h2>Meet The <span className="gradient-text">Founders</span></h2>
         </div>
 
         <div className="team-grid">
