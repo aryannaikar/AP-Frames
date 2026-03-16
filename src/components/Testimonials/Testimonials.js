@@ -2,10 +2,11 @@ import React from "react";
 import "./Testimonials.css";
 
 const data = [
-  { name: "Rahul", text: "Amazing growth results in 2 months!" },
-  { name: "Anita", text: "Reels went viral — insane reach!" },
-  { name: "Vikram", text: "Professional and data-driven strategy." },
-  { name: "Simran", text: "Best Instagram agency I worked with." }
+  { name: "Yash More (Myrasa Perfume)", text: "Our brand's online presence has skyrocketed. The quality of photo shoots and editing is top-notch!" },
+  { name: "Yatin Parmar (YP Teams)", text: "Working with the team has been a game-changer for YP Teams. Professional, creative, and highly recommended." },
+  { name: "Aniket Tamboli (WareHouse Wolves)", text: "The content created for WareHouse Wolves is stunning. They really understand our brand's vibe." },
+  { name: "Mangesh Kudalkar (Kurla MLA)", text: "Excellent social media management. The engagement on our posts has never been better." },
+  { name: "Valleri Pawar (V Nailed It)", text: "Beautiful visuals and great attention to detail. V Nailed It is finally getting the attention it deserves!" }
 ];
 
 function Testimonials() {
