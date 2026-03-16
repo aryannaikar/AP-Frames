@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
 
-const categories = ["Video Editing", "Photo Shoot", "Graphic Design"];
+const categories = ["Videos", "Photos", "Graphic Design"];
 
 const items = [
-  { name: "Cinematic Wedding Highlight", category: "Video Editing", subCategory: "Cinematic" },
-  { name: "Brand Commercial Reel", category: "Video Editing", subCategory: "Commercials" },
-  { name: "Urban Street Photography", category: "Photo Shoot", subCategory: "Street" },
-  { name: "Product Catalog Shoot", category: "Photo Shoot", subCategory: "Product" },
+  { name: "Cinematic Wedding Highlight", category: "Videos", subCategory: "Cinematic" },
+  { name: "Brand Commercial Reel", category: "Videos", subCategory: "Commercials" },
+  { name: "Urban Street Photography", category: "Photos", subCategory: "Street" },
+  { name: "Product Catalog Shoot", category: "Photos", subCategory: "Product" },
   { name: "Minimalist Brand Identity", category: "Graphic Design", subCategory: "Brand Identity" },
   { name: "Social Media Carousel Set", category: "Graphic Design", subCategory: "Social Media" },
-  { name: "High-Energy Fitness Reel", category: "Video Editing", subCategory: "Reels" },
-  { name: "Event Coverage Shots", category: "Photo Shoot", subCategory: "Wedding" },
-  { name: "Restaurant Promo Video", category: "Video Editing", subCategory: "Commercials" },
+  { name: "High-Energy Fitness Reel", category: "Videos", subCategory: "Reels" },
+  { name: "Event Coverage Shots", category: "Photos", subCategory: "Wedding" },
+  { name: "Restaurant Promo Video", category: "Videos", subCategory: "Commercials" },
   { name: "Tech Product Ad", category: "Graphic Design", subCategory: "Posters" }
 ];
 

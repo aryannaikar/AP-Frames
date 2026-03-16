@@ -18,22 +18,20 @@ function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <p>your@email.com</p>
+          <p>apstudio.reachout@gmail.com</p>
         </div>
       </div>
 
       {/* Social Media Icons */}
       <div className="social-icons">
-        <a href="https://instagram.com/socialmediawale" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://instagram.com/apstudio._" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram />
         </a>
-        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <a href="https://wa.me/9880144197" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <FaWhatsapp />
+        
         </a>
-        <a href="https://linkedin.com/company/socialmediawale" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <FaLinkedin />
-        </a>
-        <a href="mailto:hello@socialmediawale.com" aria-label="Email">
+        <a href="apstudio.reachout@gmail.com" aria-label="Email">
           <FaEnvelope />
         </a>
       </div>
