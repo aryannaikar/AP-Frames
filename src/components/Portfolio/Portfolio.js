@@ -1,57 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Portfolio.css";
 
-const categories = ["Videos", "Photos", "Graphic Design"];
-
-const items = [
-  { name: "Cinematic Wedding Highlight", category: "Videos", subCategory: "Cinematic" },
-  { name: "Brand Commercial Reel", category: "Videos", subCategory: "Commercials" },
-  { name: "Urban Street Photography", category: "Photos", subCategory: "Street" },
-  { name: "Product Catalog Shoot", category: "Photos", subCategory: "Product" },
-  { name: "Minimalist Brand Identity", category: "Graphic Design", subCategory: "Brand Identity" },
-  { name: "Social Media Carousel Set", category: "Graphic Design", subCategory: "Social Media" },
-  { name: "High-Energy Fitness Reel", category: "Videos", subCategory: "Reels" },
-  { name: "Event Coverage Shots", category: "Photos", subCategory: "Wedding" },
-  { name: "Restaurant Promo Video", category: "Videos", subCategory: "Commercials" },
-  { name: "Tech Product Ad", category: "Graphic Design", subCategory: "Posters" }
-];
-
 function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
-
-  const filtered = items.filter(item => item.category === activeCategory);
-
   return (
     <section id="portfolio" className="portfolio section-container">
       <div className="portfolio-header">
         <span>OUR WORK</span>
         <h2><span className="gradient-text">Portfolio</span> Showcase</h2>
-        <p style={{ marginTop: "1rem", color: "var(--light-text)", maxWidth: "600px", margin: "1rem auto 0" }}>
-          Explore some of our cinematic projects and social media content created for brands and creators.
-          From high-energy reels to professional brand shoots, our work focuses on creating content that stands out in today’s fast-moving social media world.
+      </div>
+
+      <div className="instagram-cta card-glow">
+        <p className="cta-text">
+          All types of our work are available on our Instagram page. 
+          Discover our latest projects, behind-the-scenes content, and more.
         </p>
-      </div>
-
-      <div className="filters main-filters" style={{ marginBottom: "3rem" }}>
-        {categories.map(cat => (
-          <button
-            key={cat}
-            className={activeCategory === cat ? "active" : ""}
-            onClick={() => setActiveCategory(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
-
-      <div className="portfolio-grid">
-        {filtered.map((item, index) => (
-          <div key={index} className="card-glow portfolio-card">
-            <div className="thumb gradient-text">{item.name.charAt(0)}</div>
-            <h3>{item.name}</h3>
-            <span>{item.category}</span>
-          </div>
-        ))}
+        <a 
+          href="https://www.instagram.com/ap_studios__" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-primary instagram-btn"
+        >
+          View on Instagram
+        </a>
       </div>
     </section>
   );

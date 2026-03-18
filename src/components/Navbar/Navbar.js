@@ -18,7 +18,7 @@ function Navbar() {
         <div className="logo gradient-text">AP Studios</div>
 
         <div className={`nav-links ${open ? "active" : ""}`}>
-          {["home","about","services","portfolio","contact"].map((item) => (
+          {["home","about","services","contact"].map((item) => (
             <a key={item} href={`#${item}`} onClick={()=>setOpen(false)}>
               {item}
             </a>
